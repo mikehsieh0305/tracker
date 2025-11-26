@@ -1,0 +1,34 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "main": "main.js",
+  "build": {
+    "appId": "com.example.myapp",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "build/icons/mac/icon.icns"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^39.2.3",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "frappe-gantt": "^1.0.4",
+    "xlsx": "^0.18.5"
+  }
+}
